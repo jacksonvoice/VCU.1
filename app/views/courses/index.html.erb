@@ -1,0 +1,7 @@
+<h1>Welcome to our college courses</h1>
+
+<% @course.each do |t| %>
+	<%= t.name %>
+<% end %>
+
+<%= link_to "new", new_course_path %>
