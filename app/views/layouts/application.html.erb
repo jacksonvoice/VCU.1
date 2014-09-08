@@ -13,7 +13,31 @@
 
   <body>
 
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><%= link_to "VCU", root_path %></a></h1>
+        </li>
+      </ul>
+      <section class="top-bar-section">
+      <ul class="left">
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">User</a></li>
+      <li><a href="#">Forums</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Sign In</a></li>
+    </ul>
+  </section>
+</nav>
+    </nav>
+
+    <div class="row">
+      <div class="small-12 cloumn">
+<div class="page-content">
     <%= yield %>
     <%= javascript_include_tag "application" %>
+</div>
+  </div>
+    </div>
   </body>
 </html>

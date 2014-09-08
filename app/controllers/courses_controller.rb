@@ -24,6 +24,14 @@ class CoursesController < ApplicationController
 	@course = Course.find(params[:id])
 	end
 
+	def destroy
+		@course = Course.find_by(params[:id]).destroy
+		respond_to do |format|
+      format.html { redirect_to root_path, notice: 'Todo list was successfully destroyed.' }
+    
+    end
+	end
+
 
 	private
 
