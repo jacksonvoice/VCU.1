@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Course, :type => :model do
 
-	it "should create a valid course" do
+	it "should create a valid course with a valid name" do
 		course = Course.new(name: 'name1')
 		expect(course).to be_valid
 	end
