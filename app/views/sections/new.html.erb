@@ -1,0 +1,8 @@
+<h2>Creat a new section for this course</h2>
+
+<%= form_for @section, do |f| %>
+ 
+	<%= f.text_field :name %>
+	<%= f.submit "Create" %>
+
+<% end %>

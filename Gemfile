@@ -32,6 +32,9 @@ gem 'spring',        group: :development
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'shoulda-matchers'
+  gem 'factory_girl'
+  gem 'rspec-collection_matchers'
+
 end
 
 # Use ActiveModel has_secure_password
