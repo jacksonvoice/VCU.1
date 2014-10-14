@@ -7,10 +7,10 @@ class SectionsController < ApplicationController
 
 	def create
 		@section = Section.new(section_params)
-
+		@course = Course.find(params[:id])
 		if @section.save 
 			flash[:success]="New section added!"
-			redirect_to @section
+			redirect_to @course
 		else
 			flash[:error] = "There was an error creating the section."
 			render action: :new
