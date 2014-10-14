@@ -21,5 +21,9 @@ RSpec.describe Course, :type => :model do
 		expect(course).to have(1).errors_on(:name)
 	end
 
+	it "has a valid factory" do
+		expect(FactoryGirl.buld(:course)).to be_valid
+	end
+
 
 end

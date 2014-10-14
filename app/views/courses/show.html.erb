@@ -1,6 +1,11 @@
-<h2>Your course</h2>
 
 <div>
-	<%= @course.name %>
-	<%= link_to "Delete", courses_path, method: :delete %>
+	<h2><%= @course.name %></h2><br />
+	<br/>
+		<% @course.sections.each do |section| %>
+			<%= section.name %>
+		<% end %>
+	<br />
+		<%= link_to "Delete", courses_path, method: :delete %>
+		<%= link_to "Add new Section", new_section_path %>
 </div>
